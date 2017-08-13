@@ -28,7 +28,6 @@ AuthUserDetailComponent.propTypes = {
 }
 
 function mapStateToProps(state, ownProps) {
-    debugger;
     return {
         users : state.authData
     }
