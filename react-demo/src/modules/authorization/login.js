@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as authorizeUserAction from '../../common/actions/userActions';
+import AuthUserDetails from './AuthUserDetails';
 class LoginComponent extends React.Component {
     constructor (props) {
         super(props);
@@ -12,10 +13,6 @@ class LoginComponent extends React.Component {
         this._onSubmit = this._onSubmit.bind(this)
         this._changeUsername = this._changeUsername.bind(this)
         this._changePassword = this._changePassword.bind(this)
-    }
-    
-    componentWillMount() {
-        this.props.actions.fetchUserDetails();
     }
     render() {
         return(
@@ -47,11 +44,7 @@ class LoginComponent extends React.Component {
                 <div className='form__submit-btn-wrapper'>
                     <button className='form__submit-btn' type='submit'>sign in</button>
                 </div>
-                <div>
-                    {this.props.users ? this.props.users.map(function(item, index) {
-                        return <div key={index}>{item.name}</div>;
-                    }) : null}
-                </div>
+                <AuthUserDetails></AuthUserDetails>
         </form>
         )
     }
@@ -80,13 +73,7 @@ function mapStateToProps(state, ownProps) {
         return {
             authData : state.authData
         }
-    } else {
-        if (state.authData.length) {
-            return {
-                users : state.authData
-            }
-        }
-    }
+    } 
     return {
         authData : state.authData
     }

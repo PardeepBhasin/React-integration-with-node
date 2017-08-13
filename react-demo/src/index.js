@@ -9,8 +9,8 @@ import {loadProducts, loadFilters} from './common/actions/productActions';
 import './modules/components/buy/views/style/buy.css';
 
 const store = configureStore();
-store.dispatch(loadProducts());
-store.dispatch(loadFilters());
+//store.dispatch(loadProducts());
+//store.dispatch(loadFilters());
 
 render(
     <Provider store={store} >
