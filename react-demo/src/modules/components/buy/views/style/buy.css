@@ -1,0 +1,2012 @@
+@charset "UTF-8";
+/* line 1, airtel/assets/scss/standard/components/_plan-circle.scss */
+.plan-circle-main-wrap {
+  padding: 20px 0; }
+  /* line 3, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-main-wrap fieldset {
+    max-width: 100%; }
+
+/* line 8, airtel/assets/scss/standard/components/_plan-circle.scss */
+.myFreebies-myBoosters fieldset {
+  max-width: 100%; }
+
+/* line 12, airtel/assets/scss/standard/components/_plan-circle.scss */
+.plan-circle-wrap .first-title {
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-left: 0; }
+
+/* line 20, airtel/assets/scss/standard/components/_plan-circle.scss */
+.first-title a {
+  font-size: 12px;
+  color: #E40000;
+  display: block;
+  margin-top: 10px; }
+
+/* line 27, airtel/assets/scss/standard/components/_plan-circle.scss */
+.plan-circle-wrap {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  /* line 28, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap .first-title > p {
+    display: table-cell; }
+    /* line 30, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .first-title > p .small.color-purple {
+      display: block;
+      font-size: 14px; }
+  /* line 35, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap .serial-number {
+    min-height: 80px;
+    font-size: 100px;
+    float: left;
+    margin-top: 27px;
+    margin-right: 10px;
+    font-weight: 100;
+    vertical-align: middle; }
+  /* line 46, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap.border-none {
+    border: none; }
+  /* line 49, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap ul {
+    list-style: none;
+    text-align: left;
+    padding: 0; }
+  /* line 54, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap [class^="col-"] {
+    padding: 0; }
+  /* line 58, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap ul:before, .plan-circle-wrap ul:after {
+    clear: both;
+    content: "";
+    display: block; }
+  /* line 64, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap:before, .plan-circle-wrap:after {
+    clear: both;
+    content: "";
+    display: block; }
+  /* line 69, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: left; }
+    /* line 74, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.readonly {
+      pointer-events: none; }
+    /* line 77, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.readonly .circle {
+      background: #F6F6F6;
+      pointer-events: none;
+      box-shadow: inset 0 0 0 1px #F6F6F6; }
+      /* line 81, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .plan-circle-wrap li.readonly .circle > * {
+        opacity: 0.3; }
+    /* line 86, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li .circle {
+      background: #fff;
+      line-height: 16px;
+      vertical-align: middle;
+      display: table-cell;
+      height: 130px;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: center;
+      width: 130px;
+      box-shadow: inset 0 0 0 1px #000000;
+      border-radius: 100%;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.1s; }
+      /* line 101, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .plan-circle-wrap li .circle.circle-small {
+        width: 100px;
+        height: 100px; }
+      /* line 105, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .plan-circle-wrap li .circle .data.input {
+        display: none; }
+      /* line 108, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .plan-circle-wrap li .circle input {
+        display: none;
+        border: none;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 auto 5px auto;
+        width: 50px;
+        padding: 0px;
+        text-align: center;
+        font-size: 40px;
+        box-shadow: inset 0px -1px 0 0px #343434 !important; }
+    /* line 122, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.edit .circle .data.input, .plan-circle-wrap li.edit .circle input {
+      display: block; }
+    /* line 125, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.edit .circle h5 {
+      font-size: 12px; }
+    /* line 128, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.edit .circle p.font-size-20 {
+      display: none; }
+  /* line 133, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap.inactive li {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; }
+  /* line 140, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li .cicle-out {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px; }
+  /* line 141, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li .circle .icon-filled-star {
+    color: #fdc400;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  /* line 146, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li.edit .circle {
+    box-shadow: inset 0 0 0 2px #E40000; }
+  /* line 150, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li.active .circle {
+    background: #E40000;
+    box-shadow: none;
+    color: #fff; }
+  /* line 155, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li.active.edit .circle {
+    color: #000;
+    background: #fff;
+    box-shadow: inset 0 0 0 2px #000000; }
+    /* line 159, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.active.edit .circle:hover {
+      background: #fff;
+      box-shadow: inset 0 0 0 2px #E40000; }
+  /* line 166, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li .circle i.icon {
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: block; }
+  /* line 171, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li .circle h4, .plan-circle-wrap li .circle h5 {
+    margin-bottom: 5px;
+    font-weight: 100; }
+  /* line 175, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li .circle .number-of-person {
+    font-size: 24px;
+    display: block;
+    margin: 5px 0; }
+  /* line 180, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap li .circle .price {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 5px; }
+    /* line 184, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li .circle .price:before {
+      font-size: 16px;
+      margin-bottom: 4px; }
+  /* line 193, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap.circle-sm li .circle {
+    width: 100px;
+    height: 100px; }
+
+/* line 202, airtel/assets/scss/standard/components/_plan-circle.scss */
+.plan-circle-wrap.data-booster li {
+  margin-right: 10px; }
+  /* line 203, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap.data-booster li .circle {
+    box-shadow: inset 0 0 0 1px #9f9f9f; }
+    @media (max-width: 768px) {
+      /* line 203, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .plan-circle-wrap.data-booster li .circle {
+        width: 80px;
+        height: 80px;
+        box-shadow: inset 0 0 0 1px #d4d4d4; } }
+  /* line 210, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap.data-booster li.active .circle {
+    box-shadow: none; }
+
+@media (min-width: 768px) {
+  /* line 218, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap {
+    border-bottom: 1px #D4D4D4 solid; }
+    /* line 219, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .smore-sless {
+      display: none; }
+    /* line 222, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .first-title > p .small.color-purple {
+      padding-top: 20px; }
+    /* line 227, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li .circle:hover {
+      box-shadow: inset 0 0 0 2px #E40000; }
+    /* line 230, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap li.active .circle:hover {
+      background: #af0000;
+      box-shadow: none; } }
+@media (max-width: 767px) {
+  /* line 239, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-main-wrap {
+    padding: 0px; }
+
+  /* line 243, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap {
+    text-align: center; }
+    /* line 244, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .first-title {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding-top: 0;
+      line-height: 20px; }
+    /* line 250, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .serial-number {
+      font-size: 48px;
+      margin-top: 8px; }
+    /* line 255, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .first-title > span {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 7px 0; }
+    /* line 260, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .first-title a {
+      margin-top: 0px; }
+    /* line 265, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap ul {
+      display: inline;
+      padding: 0 0px 20px;
+      text-align: center; }
+    /* line 270, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .serial-number {
+      min-height: inherit; }
+    /* line 273, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap[disabled] .smore-sless {
+      display: none; }
+    /* line 276, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap .smore-sless {
+      margin-top: 10px;
+      float: left; }
+      /* line 279, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .plan-circle-wrap .smore-sless:after {
+        content: "SHOW MORE"; }
+    /* line 283, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .plan-circle-wrap.showmore .smore-sless:after {
+      content: "SHOW LESS"; }
+
+  /* line 291, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .citcle-plan-action[disabled] {
+    display: none; }
+
+  /* line 295, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .plan-circle-wrap.showmore li:nth-child(4) ~ li {
+    display: inline-block; } }
+@media (max-width: 767px) {
+  /* line 299, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .payment-Wallet {
+    text-align: center; } }
+/* line 303, airtel/assets/scss/standard/components/_plan-circle.scss */
+.payment-Wallet ul {
+  padding-left: 15px; }
+  @media (min-width: 768px) {
+    /* line 303, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .payment-Wallet ul {
+      padding: 15px; } }
+/* line 309, airtel/assets/scss/standard/components/_plan-circle.scss */
+.payment-Wallet li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  text-align: left;
+  max-width: 140px;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    /* line 309, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .payment-Wallet li {
+      margin-right: 0px;
+      margin: 0px 15px;
+      max-width: 112px; } }
+  /* line 317, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .payment-Wallet li .circle {
+    background: #fff;
+    line-height: 16px;
+    vertical-align: middle;
+    display: table-cell;
+    height: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 130px;
+    box-shadow: inset 0 0 0 1px #9F9F9F;
+    border-radius: 100%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative; }
+    @media screen and (max-width: 767px) {
+      /* line 317, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .payment-Wallet li .circle {
+        height: 110px;
+        width: 110px; } }
+  /* line 339, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .payment-Wallet li:hover .circle, .payment-Wallet li.active .circle {
+    box-shadow: inset 0 0 0 2px #e40000; }
+  /* line 341, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .payment-Wallet li .cicle-out {
+    text-align: center;
+    padding-top: 10px;
+    color: #707070; }
+/* line 347, airtel/assets/scss/standard/components/_plan-circle.scss */
+.payment-Wallet.payment-setup {
+  text-align: left;
+  padding: 0 5px !important; }
+  /* line 350, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .payment-Wallet.payment-setup li {
+    margin: 0 15px 0 0; }
+    /* line 352, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .payment-Wallet.payment-setup li:last-child {
+      margin-left: 0 !important; }
+/* line 357, airtel/assets/scss/standard/components/_plan-circle.scss */
+.payment-Wallet.load-money ul li {
+  margin-right: 15px;
+  margin-bottom: 15px; }
+  /* line 358, airtel/assets/scss/standard/components/_plan-circle.scss */
+  .payment-Wallet.load-money ul li .circle {
+    width: 120px;
+    height: 120px; }
+  @media screen and (max-width: 767px) {
+    /* line 357, airtel/assets/scss/standard/components/_plan-circle.scss */
+    .payment-Wallet.load-money ul li {
+      margin: auto;
+      margin-bottom: 15px; }
+      /* line 360, airtel/assets/scss/standard/components/_plan-circle.scss */
+      .payment-Wallet.load-money ul li .circle {
+        width: 88px;
+        height: 88px; } }
+
+/* line 364, airtel/assets/scss/standard/components/_plan-circle.scss */
+#payments_tab .payment-Wallet li:nth-child(5) {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+/* -- Buy Module Variables -- */
+/* -- All color Classes -- */
+/* line 20, airtel/assets/scss/buy.scss */
+.text-grey {
+  color: #F9F9F9; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-grey {
+  background: #F9F9F9; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-red {
+  color: #E40000; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-red {
+  background: #E40000; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-white {
+  color: #fff; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-white {
+  background: #fff; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-black {
+  color: #000; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-black {
+  background: #000; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-goldenrod {
+  color: #c3a135; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-goldenrod {
+  background: #c3a135; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-soft-red {
+  color: #f1a09f; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-soft-red {
+  background: #f1a09f; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-light-grey {
+  color: #d4d4d4; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-light-grey {
+  background: #d4d4d4; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-dark-grey {
+  color: #4A4A4A; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-dark-grey {
+  background: #4A4A4A; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-soft-orange {
+  color: #e2c7b4; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-soft-orange {
+  background: #e2c7b4; }
+
+/* line 20, airtel/assets/scss/buy.scss */
+.text-strong-orange {
+  color: #B55808; }
+
+/* line 23, airtel/assets/scss/buy.scss */
+.bg-strong-orange {
+  background: #B55808; }
+
+/* line 28, airtel/assets/scss/buy.scss */
+.page-main-app-devices-pdp .selectize-control .selectize-input > input {
+  height: 40px; }
+
+/* line 31, airtel/assets/scss/buy.scss */
+.search-field [class^='icon'] {
+  position: relative;
+  z-index: 2; }
+/* line 35, airtel/assets/scss/buy.scss */
+.search-field .icon-outlined-circle-plus {
+  transform: rotate(45deg); }
+
+/* line 39, airtel/assets/scss/buy.scss */
+header,
+header .navbar-default,
+header .top-smal-menu,
+header .large-menu {
+  transition: none; }
+
+/* -- Products Colors  -- */
+/* line 47, airtel/assets/scss/buy.scss */
+.product_colors {
+  position: relative;
+  display: inline-block; }
+  /* line 50, airtel/assets/scss/buy.scss */
+  .product_colors .tooltip {
+    white-space: nowrap; }
+  /* line 53, airtel/assets/scss/buy.scss */
+  .product_colors > * {
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    float: left;
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-bottom: 5px; }
+    /* line 64, airtel/assets/scss/buy.scss */
+    .product_colors > *.selected {
+      position: relative;
+      z-index: 1; }
+      /* line 67, airtel/assets/scss/buy.scss */
+      .product_colors > *.selected:first-child {
+        margin-left: 4px; }
+      /* line 70, airtel/assets/scss/buy.scss */
+      .product_colors > *.selected:after {
+        z-index: -1;
+        position: absolute;
+        left: -10%;
+        top: -10%;
+        border: solid 1px #E40000;
+        width: 120%;
+        height: 120%;
+        content: '';
+        border-radius: 50%; }
+  /* line 83, airtel/assets/scss/buy.scss */
+  .product_colors [class*=color-] {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-white {
+    background: #fff;
+    border: solid 1px #e6e6e6; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-gold {
+    background: #d4bba3;
+    border: solid 1px #c4a180; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-dark-grey {
+    background: #4A4A4A;
+    border: solid 1px #313131; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-black {
+    background: #000;
+    border: solid 1px black; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-silver {
+    background: #d0d0d4;
+    border: solid 1px #b5b5bc; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-red {
+    background: #af1e2d;
+    border: solid 1px #831722; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-jet-black {
+    background: #2e3034;
+    border: solid 1px #161719; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-rose-gold {
+    background: #d0a8a0;
+    border: solid 1px #bf897e; }
+  /* line 91, airtel/assets/scss/buy.scss */
+  .product_colors .color-space-grey {
+    background: #9b9ba0;
+    border: solid 1px #818187; }
+  /* line 14, airtel/assets/scss/standard/mixins/_clearfix.scss */
+  .product_colors:before, .product_colors:after {
+    content: " ";
+    display: table; }
+  /* line 19, airtel/assets/scss/standard/mixins/_clearfix.scss */
+  .product_colors:after {
+    clear: both; }
+
+/* -- Products tags  -- */
+/* line 102, airtel/assets/scss/buy.scss */
+.product_tags {
+  margin-left: -5px; }
+  /* line 104, airtel/assets/scss/buy.scss */
+  .product_tags > * {
+    border-radius: 20px;
+    border: solid 1px #EBEBEB;
+    background: #fff;
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer; }
+    /* line 114, airtel/assets/scss/buy.scss */
+    .product_tags > * > span {
+      padding: 5px 10px;
+      display: block; }
+    @media screen and (min-width: 767px) {
+      /* line 119, airtel/assets/scss/buy.scss */
+      .product_tags > *:hover {
+        background: #E40000;
+        color: #fff; } }
+    /* line 124, airtel/assets/scss/buy.scss */
+    .product_tags > *.active, .product_tags > *.selected {
+      background: #E40000;
+      color: #fff; }
+    /* line 130, airtel/assets/scss/buy.scss */
+    .product_tags > *.selected:hover {
+      background: #b50a02; }
+
+/* -- Home banner style -- */
+/* line 140, airtel/assets/scss/buy.scss */
+.content-wrap .banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+
+/* -- Product Styling  -- */
+/* line 160, airtel/assets/scss/buy.scss */
+.products .product {
+  border-top: solid 4px #F1F1F1;
+  /*transition: 0.6s;*/ }
+  @media screen and (min-width: 767px) {
+    /* line 160, airtel/assets/scss/buy.scss */
+    .products .product {
+      border-top: solid 1px #F1F1F1;
+      padding: 15px;
+      width: 50%;
+      float: left; } }
+  @media screen and (min-width: 991px) {
+    /* line 160, airtel/assets/scss/buy.scss */
+    .products .product {
+      padding: 20px;
+      width: 33.33%; } }
+/* line 174, airtel/assets/scss/buy.scss */
+.product {
+  padding: 15px;
+  position: relative; }
+  /* line 177, airtel/assets/scss/buy.scss */
+  .product_onchange_loader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); }
+    /* line 185, airtel/assets/scss/buy.scss */
+    .product_onchange_loader .search-loader {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 3;
+      width: 100px;
+      height: 25px; }
+  /* line 197, airtel/assets/scss/buy.scss */
+  .product_price {
+    color: #9F9F9F;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 20px; }
+    /* line 202, airtel/assets/scss/buy.scss */
+    .product_price_selling {
+      color: #E40000;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1; }
+      @media screen and (min-width: 767px) {
+        /* line 202, airtel/assets/scss/buy.scss */
+        .product_price_selling {
+          font-size: 16px; } }
+      /* line 210, airtel/assets/scss/buy.scss */
+      .product_price_selling span {
+        color: #707070; }
+  /* line 215, airtel/assets/scss/buy.scss */
+  .product_title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    cursor: pointer; }
+    @media screen and (min-width: 767px) {
+      /* line 215, airtel/assets/scss/buy.scss */
+      .product_title {
+        margin-bottom: 5px;
+        font-size: 20px;
+        min-height: 48px; } }
+  /* line 229, airtel/assets/scss/buy.scss */
+  .product .product_colors .tooltip {
+    position: absolute !important;
+    width: auto;
+    margin: 0;
+    height: auto; }
+  /* line 235, airtel/assets/scss/buy.scss */
+  .product .product_colors [class*='color'] {
+    height: 10px;
+    width: 10px; }
+    /* line 238, airtel/assets/scss/buy.scss */
+    .product .product_colors [class*='color']:after {
+      width: 14px;
+      height: 14px;
+      left: -3px;
+      top: -3px; }
+  /* line 246, airtel/assets/scss/buy.scss */
+  .product_picture {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden; }
+    @media screen and (min-width: 767px) {
+      /* line 246, airtel/assets/scss/buy.scss */
+      .product_picture {
+        min-height: 280px;
+        margin-bottom: 0; }
+        /* line 254, airtel/assets/scss/buy.scss */
+        .product_picture img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          max-height: 80%;
+          max-width: 90%;
+          z-index: 1; } }
+  /* line 273, airtel/assets/scss/buy.scss */
+  .product_offer {
+    background: #FDC400;
+    padding: 5px;
+    font-size: 12px; }
+  /* line 279, airtel/assets/scss/buy.scss */
+  .product .product_action {
+    width: 100%;
+    visibility: hidden; }
+    /* line 282, airtel/assets/scss/buy.scss */
+    .product .product_action .btn {
+      width: 100%;
+      transition: none; }
+      @media screen and (max-width: 480px) {
+        /* line 282, airtel/assets/scss/buy.scss */
+        .product .product_action .btn {
+          font-size: 11px;
+          padding: 5px; } }
+  /* line 291, airtel/assets/scss/buy.scss */
+  .product:hover {
+    background: #F9F9F9; }
+    /* line 293, airtel/assets/scss/buy.scss */
+    .product:hover .product_action {
+      visibility: visible; }
+/* line 298, airtel/assets/scss/buy.scss */
+.left_section {
+  min-height: 1px;
+  position: relative; }
+  @media screen and (min-width: 767px) {
+    /* line 298, airtel/assets/scss/buy.scss */
+    .left_section {
+      padding-right: 12px;
+      float: left;
+      width: 24%;
+      margin-right: 2%; } }
+/* line 308, airtel/assets/scss/buy.scss */
+.right_section {
+  min-height: 1px;
+  position: relative; }
+  @media screen and (min-width: 767px) {
+    /* line 308, airtel/assets/scss/buy.scss */
+    .right_section {
+      width: 74%;
+      float: left; } }
+
+@media screen and (max-width: 767px) {
+  /* line 318, airtel/assets/scss/buy.scss */
+  .product_filters {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    z-index: 9999;
+    padding: 26px;
+    overflow: auto; } }
+
+/* line 332, airtel/assets/scss/buy.scss */
+.out_of_stock {
+  position: absolute;
+  width: 100%;
+  padding: 1px;
+  background: #fff;
+  bottom: 35%;
+  font-size: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #E40000;
+  box-shadow: 0 1px 5px #eee;
+  z-index: 2; }
+  @media screen and (min-width: 480px) {
+    /* line 332, airtel/assets/scss/buy.scss */
+    .out_of_stock {
+      bottom: 45%;
+      width: 80%;
+      padding: 7px;
+      font-size: 13px;
+      text-transform: uppercase; } }
+
+/* -- Recommended and Recently Viewed products list css-- */
+/* line 360, airtel/assets/scss/buy.scss */
+[type="Recommended"] .product,
+[type="Recently Viewed"] .product {
+  border: solid 1px transparent;
+  padding-top: 35px; }
+  @media screen and (max-width: 767px) {
+    /* line 360, airtel/assets/scss/buy.scss */
+    [type="Recommended"] .product,
+    [type="Recently Viewed"] .product {
+      width: 33.3%;
+      float: left;
+      padding: 10px;
+      min-height: 300px; }
+      /* line 368, airtel/assets/scss/buy.scss */
+      [type="Recommended"] .product .product_title,
+      [type="Recently Viewed"] .product .product_title {
+        min-height: 56px; } }
+  @media screen and (max-width: 480px) {
+    /* line 360, airtel/assets/scss/buy.scss */
+    [type="Recommended"] .product,
+    [type="Recently Viewed"] .product {
+      width: 50%;
+      float: left;
+      padding: 10px;
+      min-height: 300px; } }
+
+/* -- Grey and white body bg color scheme -- */
+/* line 388, airtel/assets/scss/buy.scss */
+.grey-and-white {
+  /*overflow: auto;*/
+  min-height: 100%; }
+  /* line 391, airtel/assets/scss/buy.scss */
+  .grey-and-white > .container {
+    height: 100%; }
+    /* line 393, airtel/assets/scss/buy.scss */
+    .grey-and-white > .container > .row {
+      min-height: 100%; }
+      @media screen and (min-width: 767px) {
+        /* line 393, airtel/assets/scss/buy.scss */
+        .grey-and-white > .container > .row {
+          display: flex; } }
+      /* line 398, airtel/assets/scss/buy.scss */
+      .grey-and-white > .container > .row .hold-grey,
+      .grey-and-white > .container > .row .hold-white {
+        min-height: 100%; }
+  @media screen and (min-width: 767px) {
+    /* line 388, airtel/assets/scss/buy.scss */
+    .grey-and-white {
+      position: relative;
+      z-index: 1; }
+      /* line 407, airtel/assets/scss/buy.scss */
+      .grey-and-white:after {
+        background: #F9F9F9;
+        width: 50%;
+        z-index: -1;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%; } }
+
+/* -- Product detail page css -- */
+/* line 423, airtel/assets/scss/buy.scss */
+.product_pictures_block {
+  position: relative;
+  text-align: center; }
+  /* line 426, airtel/assets/scss/buy.scss */
+  .product_pictures_block #zoomed_overlay {
+    position: absolute;
+    left: 72%;
+    top: -7%;
+    z-index: 9;
+    background: #fff;
+    border: solid 1px #aaa;
+    height: 114%;
+    display: none;
+    background-repeat: no-repeat;
+    width: 87%;
+    padding: 1px; }
+  /* line 439, airtel/assets/scss/buy.scss */
+  .product_pictures_block .mouse_pointer_cover {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    height: 100px;
+    width: 150px; }
+  /* line 445, airtel/assets/scss/buy.scss */
+  .product_pictures_block .product_multi_imgs {
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    width: 7%;
+    margin-top: 10%; }
+    /* line 454, airtel/assets/scss/buy.scss */
+    .product_pictures_block .product_multi_imgs li {
+      margin-bottom: 35px; }
+      /* line 456, airtel/assets/scss/buy.scss */
+      .product_pictures_block .product_multi_imgs li img {
+        margin: auto;
+        height: 70px; }
+      /* line 460, airtel/assets/scss/buy.scss */
+      .product_pictures_block .product_multi_imgs li.selected {
+        opacity: 0.4; }
+      /* line 463, airtel/assets/scss/buy.scss */
+      .product_pictures_block .product_multi_imgs li:hover {
+        opacity: 0.4; }
+  /* line 468, airtel/assets/scss/buy.scss */
+  .product_pictures_block .pro_full_pic {
+    position: relative;
+    display: inline-block;
+    cursor: cell; }
+  /* line 14, airtel/assets/scss/standard/mixins/_clearfix.scss */
+  .product_pictures_block:before, .product_pictures_block:after {
+    content: " ";
+    display: table; }
+  /* line 19, airtel/assets/scss/standard/mixins/_clearfix.scss */
+  .product_pictures_block:after {
+    clear: both; }
+
+@media screen and (max-width: 768px) {
+  /* line 477, airtel/assets/scss/buy.scss */
+  .page-main-app-devices-pdp header .navbar-default {
+    z-index: 9999; } }
+/* line 481, airtel/assets/scss/buy.scss */
+.page-pdp .nav-icon-navbaar a,
+.page-plp .nav-icon-navbaar a {
+  position: relative;
+  z-index: 999; }
+
+@media screen and (min-width: 1199px) {
+  /* line 487, airtel/assets/scss/buy.scss */
+  .page-pdp .product_details {
+    padding: 0 0 0 55px; } }
+/* line 491, airtel/assets/scss/buy.scss */
+.page-pdp .product_details .product_price {
+  display: inline-block;
+  font-size: 14px; }
+@media screen and (max-width: 767px) {
+  /* line 496, airtel/assets/scss/buy.scss */
+  .page-pdp .table {
+    font-size: 16px; }
+    /* line 500, airtel/assets/scss/buy.scss */
+    .page-pdp .table .td_block_mobile td {
+      display: block;
+      padding: 0px; }
+    /* line 504, airtel/assets/scss/buy.scss */
+    .page-pdp .table .td_block_mobile .td-title {
+      padding-top: 15px; }
+    /* line 507, airtel/assets/scss/buy.scss */
+    .page-pdp .table .td_block_mobile .td-content {
+      padding-bottom: 15px; } }
+@media screen and (min-width: 767px) {
+  /* line 512, airtel/assets/scss/buy.scss */
+  .page-pdp .table td:first-child {
+    width: 40%; } }
+@media screen and (max-width: 767px) {
+  /* line 520, airtel/assets/scss/buy.scss */
+  .page-pdp .in-the-box p {
+    text-align: left; } }
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 526, airtel/assets/scss/buy.scss */
+  .page-pdp .scrollbox {
+    padding: 0px 0px 0px 15px !important; } }
+
+/* line 532, airtel/assets/scss/buy.scss */
+.cart-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999; }
+
+/* -- Search loader css -- */
+/* line 544, airtel/assets/scss/buy.scss */
+.search-loader {
+  font-size: 12px; }
+  /* line 546, airtel/assets/scss/buy.scss */
+  .search-loader:before {
+    content: "";
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: 100%; }
+
+/* -- Price filter range sldier css for PLP -- */
+/* line 562, airtel/assets/scss/buy.scss */
+.custom-slider.rzslider {
+  margin: 15px 0 0 !important; }
+  /* line 564, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .rz-pointer {
+    height: 14px;
+    width: 14px;
+    background: #000;
+    top: -5px;
+    cursor: pointer; }
+    /* line 570, airtel/assets/scss/buy.scss */
+    .custom-slider.rzslider .rz-pointer:after, .custom-slider.rzslider .rz-pointer:before {
+      display: none; }
+  /* line 575, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .rz-bubble {
+    color: #000; }
+  /* line 578, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .min_price {
+    left: 0 !important;
+    visibility: visible !important; }
+  /* line 582, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .max_price {
+    right: 0 !important;
+    left: auto !important;
+    visibility: visible !important; }
+  /* line 587, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .minmax_prices {
+    visibility: hidden !important; }
+  /* line 590, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .rz-tick {
+    width: 2px;
+    height: 6px;
+    margin-left: 0px;
+    border-radius: 0;
+    background: #fff;
+    top: 3px; }
+    /* line 597, airtel/assets/scss/buy.scss */
+    .custom-slider.rzslider .rz-tick.rz-selected {
+      background: #fff; }
+    /* line 600, airtel/assets/scss/buy.scss */
+    .custom-slider.rzslider .rz-tick span {
+      position: absolute;
+      top: -30px; }
+  /* line 605, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .rz-bar {
+    background: #EBEBEB;
+    height: 6px; }
+  /* line 609, airtel/assets/scss/buy.scss */
+  .custom-slider.rzslider .rz-selection {
+    background: #E40000; }
+
+/* -- Checkout status -- */
+/* line 14, airtel/assets/scss/standard/mixins/_clearfix.scss */
+.checkout-status-bar:before, .checkout-status-bar:after {
+  content: " ";
+  display: table; }
+/* line 19, airtel/assets/scss/standard/mixins/_clearfix.scss */
+.checkout-status-bar:after {
+  clear: both; }
+@media screen and (max-width: 767px) {
+  /* line 618, airtel/assets/scss/buy.scss */
+  .checkout-status-bar {
+    background: #EBEBEB;
+    padding: 20px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%; } }
+/* line 630, airtel/assets/scss/buy.scss */
+.checkout-status-bar.number-count ul {
+  counter-reset: section; }
+  /* line 632, airtel/assets/scss/buy.scss */
+  .checkout-status-bar.number-count ul li:before {
+    counter-increment: section;
+    content: " " counter(section) "" !important;
+    font-family: inherit; }
+/* line 639, airtel/assets/scss/buy.scss */
+.checkout-status-bar > ul {
+  list-style: none;
+  padding: 0; }
+  /* line 14, airtel/assets/scss/standard/mixins/_clearfix.scss */
+  .checkout-status-bar > ul:before, .checkout-status-bar > ul:after {
+    content: " ";
+    display: table; }
+  /* line 19, airtel/assets/scss/standard/mixins/_clearfix.scss */
+  .checkout-status-bar > ul:after {
+    clear: both; }
+  /* line 643, airtel/assets/scss/buy.scss */
+  .checkout-status-bar > ul > li {
+    clear: both;
+    padding-bottom: 34px;
+    line-height: 34px;
+    border-left: 1px #000 solid;
+    padding-left: 33px;
+    margin-left: 20px;
+    font-size: 20px;
+    position: relative; }
+    @media screen and (max-width: 767px) {
+      /* line 643, airtel/assets/scss/buy.scss */
+      .checkout-status-bar > ul > li {
+        float: left !important;
+        font-size: 14px  !important;
+        clear: none  !important;
+        line-height: 1  !important;
+        padding: 0 0px 0px 44px  !important;
+        border-left: none  !important;
+        margin-left: 0  !important;
+        height: 15px  !important;
+        width: 68%  !important; }
+        /* line 662, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li span {
+          display: block; }
+        /* line 665, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li small {
+          color: #707070;
+          text-transform: uppercase;
+          font-size: 11px !important; }
+        /* line 670, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li.this-disabled, .checkout-status-bar > ul > li.success {
+          border-bottom: 1px #000 solid;
+          width: 15% !important; }
+          /* line 674, airtel/assets/scss/buy.scss */
+          .checkout-status-bar > ul > li.this-disabled span,
+          .checkout-status-bar > ul > li.this-disabled small, .checkout-status-bar > ul > li.success span,
+          .checkout-status-bar > ul > li.success small {
+            display: none; }
+        /* line 680, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li.this-disabled:before {
+          background: #EBEBEB; }
+        /* line 684, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li.success {
+          border-bottom-color: #96BA3A; } }
+    /* line 688, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li:before, .checkout-status-bar > ul > li:after {
+      content: "";
+      clear: both;
+      display: block; }
+    /* line 694, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li:before {
+      font-family: airtel-icons;
+      font-size: 12px;
+      top: -1px;
+      line-height: 34px;
+      height: 35px;
+      width: 35px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      position: absolute;
+      left: -18px;
+      font-size: 18px; }
+      @media screen and (min-width: 767px) {
+        /* line 694, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li:before {
+          background: #fff !important; } }
+      @media screen and (max-width: 767px) {
+        /* line 694, airtel/assets/scss/buy.scss */
+        .checkout-status-bar > ul > li:before {
+          height: 30px;
+          line-height: 30px;
+          width: 30px;
+          left: 0; } }
+    /* line 719, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li.success:before {
+      font-family: airtel-icons;
+      color: #fff;
+      content: "" !important;
+      background: #96BA3A !important;
+      border-color: #96BA3A !important; }
+    /* line 726, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li.warning:before {
+      font-family: airtel-icons;
+      color: #fff;
+      content: "" !important;
+      background: #EF8D07 !important;
+      border-color: #EF8D07 !important; }
+    /* line 733, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li.error:before {
+      font-family: airtel-icons;
+      color: #fff;
+      content: "" !important;
+      background: #E40000 !important;
+      border-color: #E40000 !important;
+      line-height: 28px; }
+    /* line 741, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li:last-child {
+      border: none !important; }
+    /* line 744, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li.success {
+      border-left-color: #96BA3A; }
+    /* line 747, airtel/assets/scss/buy.scss */
+    .checkout-status-bar > ul > li.disabled {
+      border-left-color: #D4D4D4; }
+
+/* line 754, airtel/assets/scss/buy.scss */
+.selectize-control.single.sort_by {
+  width: 150px;
+  float: right; }
+  /* line 757, airtel/assets/scss/buy.scss */
+  .selectize-control.single.sort_by .selectize-input {
+    line-height: 1;
+    height: auto;
+    border: none;
+    width: 100%; }
+    /* line 762, airtel/assets/scss/buy.scss */
+    .selectize-control.single.sort_by .selectize-input > input {
+      height: auto;
+      width: 0 !important; }
+    /* line 766, airtel/assets/scss/buy.scss */
+    .selectize-control.single.sort_by .selectize-input:after {
+      font-size: 15px;
+      margin-top: -8px;
+      right: 15px; }
+    /* line 772, airtel/assets/scss/buy.scss */
+    .selectize-control.single.sort_by .selectize-input.dropdown-active:after {
+      font-size: 15px;
+      margin-top: 5px;
+      right: 0; }
+
+/* -- Devices landing page style-- */
+/* line 784, airtel/assets/scss/buy.scss */
+.page-home .search-field {
+  position: relative; }
+  @media screen and (min-width: 767px) {
+    /* line 786, airtel/assets/scss/buy.scss */
+    .page-home .search-field input {
+      font-size: 36px;
+      line-height: 1.1;
+      padding-bottom: 7px;
+      height: auto; } }
+  /* line 793, airtel/assets/scss/buy.scss */
+  .page-home .search-field input::-webkit-input-placeholder {
+    color: #d4d4d4; }
+  /* line 796, airtel/assets/scss/buy.scss */
+  .page-home .search-field input::-moz-placeholder {
+    color: #d4d4d4; }
+  /* line 799, airtel/assets/scss/buy.scss */
+  .page-home .search-field input:-ms-input-placeholder {
+    color: #d4d4d4; }
+  /* line 802, airtel/assets/scss/buy.scss */
+  .page-home .search-field input:-moz-placeholder {
+    color: #d4d4d4; }
+  @media screen and (min-width: 767px) {
+    /* line 806, airtel/assets/scss/buy.scss */
+    .page-home .search-field [class^="icon"] {
+      font-size: 36px !important; } }
+/* line 812, airtel/assets/scss/buy.scss */
+.page-home .dropdown-menu {
+  width: 100%;
+  background: rgba(246, 246, 246, 0.95);
+  font-size: 14px; }
+  /* line 817, airtel/assets/scss/buy.scss */
+  .page-home .dropdown-menu li a {
+    white-space: normal; }
+/* line 823, airtel/assets/scss/buy.scss */
+.page-home .noResultsFound .dropdown-menu {
+  pointer-events: none; }
+/* line 829, airtel/assets/scss/buy.scss */
+.page-home .how-does-it .home-thumb-link-section a {
+  margin-right: 35px;
+  margin-left: 35px;
+  margin-bottom: 20px; }
+/* line 838, airtel/assets/scss/buy.scss */
+.page-home .home-thumb-link-section a {
+  vertical-align: top; }
+  @media screen and (max-width: 767px) {
+    /* line 838, airtel/assets/scss/buy.scss */
+    .page-home .home-thumb-link-section a {
+      margin-bottom: 25px; } }
+  /* line 843, airtel/assets/scss/buy.scss */
+  .page-home .home-thumb-link-section a .icon {
+    position: relative;
+    display: inline-block;
+    min-height: 90px; }
+    /* line 847, airtel/assets/scss/buy.scss */
+    .page-home .home-thumb-link-section a .icon sup {
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      background: rgba(0, 0, 0, 0.7);
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      line-height: 22px;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 400; }
+    /* line 860, airtel/assets/scss/buy.scss */
+    .page-home .home-thumb-link-section a .icon + * {
+      display: block; }
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    /* line 838, airtel/assets/scss/buy.scss */
+    .page-home .home-thumb-link-section a {
+      margin-left: 25px;
+      margin-right: 25px; } }
+  @media screen and (max-width: 991px) and (min-width: 767px) {
+    /* line 838, airtel/assets/scss/buy.scss */
+    .page-home .home-thumb-link-section a {
+      margin-left: 6%;
+      margin-right: 6%; } }
+/* line 875, airtel/assets/scss/buy.scss */
+.page-home section.banner article {
+  min-height: auto; }
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 877, airtel/assets/scss/buy.scss */
+  .page-home section.banner article {
+    min-height: auto; }
+  /* line 878, airtel/assets/scss/buy.scss */
+  .page-home section.banner .home-banner-img {
+    max-width: 320px;
+    height: auto; } }
+@media screen and (max-width: 767px) {
+  /* line 884, airtel/assets/scss/buy.scss */
+  .page-home section.banner .banner-content {
+    padding-bottom: 0px; } }
+
+/* line 893, airtel/assets/scss/buy.scss */
+.page-plp .search-field,
+.page-main-app-devices-checkout-loanapproval .search-field {
+  z-index: 2;
+  position: relative; }
+  /* line 897, airtel/assets/scss/buy.scss */
+  .page-plp .search-field input::-webkit-input-placeholder,
+  .page-main-app-devices-checkout-loanapproval .search-field input::-webkit-input-placeholder {
+    color: #d4d4d4; }
+  /* line 900, airtel/assets/scss/buy.scss */
+  .page-plp .search-field input::-moz-placeholder,
+  .page-main-app-devices-checkout-loanapproval .search-field input::-moz-placeholder {
+    color: #d4d4d4; }
+  /* line 903, airtel/assets/scss/buy.scss */
+  .page-plp .search-field input:-ms-input-placeholder,
+  .page-main-app-devices-checkout-loanapproval .search-field input:-ms-input-placeholder {
+    color: #d4d4d4; }
+  /* line 906, airtel/assets/scss/buy.scss */
+  .page-plp .search-field input:-moz-placeholder,
+  .page-main-app-devices-checkout-loanapproval .search-field input:-moz-placeholder {
+    color: #d4d4d4; }
+  /* line 911, airtel/assets/scss/buy.scss */
+  .page-plp .search-field .dropdown-menu,
+  .page-main-app-devices-checkout-loanapproval .search-field .dropdown-menu {
+    width: 100%;
+    background: rgba(246, 246, 246, 0.95);
+    font-size: 14px; }
+    /* line 915, airtel/assets/scss/buy.scss */
+    .page-plp .search-field .dropdown-menu li a,
+    .page-main-app-devices-checkout-loanapproval .search-field .dropdown-menu li a {
+      white-space: normal; }
+  /* line 921, airtel/assets/scss/buy.scss */
+  .page-plp .search-field .noResultsFound .dropdown-menu li a,
+  .page-main-app-devices-checkout-loanapproval .search-field .noResultsFound .dropdown-menu li a {
+    pointer-events: none; }
+/* line 927, airtel/assets/scss/buy.scss */
+.page-plp .sort-by-box,
+.page-main-app-devices-checkout-loanapproval .sort-by-box {
+  position: relative;
+  z-index: 10; }
+/* line 931, airtel/assets/scss/buy.scss */
+.page-plp #filterLoader,
+.page-main-app-devices-checkout-loanapproval #filterLoader {
+  min-height: 600px; }
+
+/* line 937, airtel/assets/scss/buy.scss */
+.page-pdp .pro_full_pic img#imgZoom {
+  width: auto;
+  height: 455px; }
+
+@media screen and (max-width: 767px) {
+  /* line 947, airtel/assets/scss/buy.scss */
+  .page-plp .product_picture img,
+  .page-home .product_picture img {
+    height: 104px;
+    display: block;
+    margin: auto; } }
+
+/* PLP filter section  -- */
+/* line 959, airtel/assets/scss/buy.scss */
+.panel-default > .panel-heading a {
+  color: #000;
+  cursor: pointer;
+  font-size: 16px; }
+/* line 965, airtel/assets/scss/buy.scss */
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  margin-left: 0; }
+
+/* line 971, airtel/assets/scss/buy.scss */
+.slider {
+  position: relative;
+  height: 300px; }
+
+/* line 976, airtel/assets/scss/buy.scss */
+.in-the-box p {
+  min-height: 30px; }
+
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 982, airtel/assets/scss/buy.scss */
+  .flex-block .container-col-6 {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+/* line 989, airtel/assets/scss/buy.scss */
+.main-nav-center {
+  z-index: 99; }
+
+/* line 992, airtel/assets/scss/buy.scss */
+.carousel-control {
+  display: none; }
+
+/* line 996, airtel/assets/scss/buy.scss */
+#carousel-main img {
+  width: 50%; }
+
+/* line 1000, airtel/assets/scss/buy.scss */
+.carousel-indicators {
+  left: 25px;
+  bottom: 5px; }
+
+/* line 1004, airtel/assets/scss/buy.scss */
+.carousel-indicators li {
+  border-color: #000;
+  margin-right: 10px; }
+  /* line 1007, airtel/assets/scss/buy.scss */
+  .carousel-indicators li.active {
+    background: #000;
+    margin-right: 8px; }
+
+/* line 1015, airtel/assets/scss/buy.scss */
+.page-customerInfo .form-group,
+.page-customerInfo .form-group-cr,
+.page-chooseNumber .form-group,
+.page-chooseNumber .form-group-cr,
+.page-loanApproval .form-group,
+.page-loanApproval .form-group-cr {
+  margin-bottom: 15px; }
+  @media screen and (min-width: 767px) {
+    /* line 1015, airtel/assets/scss/buy.scss */
+    .page-customerInfo .form-group,
+    .page-customerInfo .form-group-cr,
+    .page-chooseNumber .form-group,
+    .page-chooseNumber .form-group-cr,
+    .page-loanApproval .form-group,
+    .page-loanApproval .form-group-cr {
+      margin-bottom: 40px; } }
+/* line 1023, airtel/assets/scss/buy.scss */
+.page-customerInfo fieldset .radios,
+.page-chooseNumber fieldset .radios,
+.page-loanApproval fieldset .radios {
+  margin-top: 0;
+  margin-bottom: 25px; }
+/* line 1028, airtel/assets/scss/buy.scss */
+.page-customerInfo .selectize-input,
+.page-chooseNumber .selectize-input,
+.page-loanApproval .selectize-input {
+  border-bottom: 1px solid #D4D4D4; }
+
+/* line 1033, airtel/assets/scss/buy.scss */
+.ifc-code-detail .dropdown-menu {
+  max-width: 260px;
+  width: 100%; }
+
+/* line 1038, airtel/assets/scss/buy.scss */
+.scroll-sticky-sidebar, .scroll-sticky-sidebar-pdp {
+  position: relative;
+  height: calc(100% - 80px); }
+  @media screen and (max-width: 767px) {
+    /* line 1038, airtel/assets/scss/buy.scss */
+    .scroll-sticky-sidebar, .scroll-sticky-sidebar-pdp {
+      top: 0px !important;
+      height: auto;
+      overflow: inherit !important; } }
+
+/* Choose number page */
+/* line 1049, airtel/assets/scss/buy.scss */
+.page-chooseNumber .panel-group {
+  margin-bottom: 0px; }
+
+/* line 1053, airtel/assets/scss/buy.scss */
+.width-65 {
+  width: 65px !important; }
+
+/* line 1058, airtel/assets/scss/buy.scss */
+.number-search-results .panel-heading a {
+  padding: 0px !important; }
+
+/*end here choose number */
+/**Zoom Container Hack**/
+/* line 1065, airtel/assets/scss/buy.scss */
+.zoomContainer {
+  z-index: 99 !important; }
+
+/**Zoom Container Hack**/
+/* line 1068, airtel/assets/scss/buy.scss */
+.left_section .overlay-box {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  opacity: 0.5;
+  z-index: 999; }
+
+/**Loan Approval**/
+/* line 1079, airtel/assets/scss/buy.scss */
+.page-loanApproval .dropdown-menu {
+  width: 100%;
+  max-width: 260px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  /* line 1085, airtel/assets/scss/buy.scss */
+  .page-loanApproval .dropdown-menu li a {
+    white-space: normal; }
+/* line 1090, airtel/assets/scss/buy.scss */
+.page-loanApproval .selectize-input .item {
+  width: 90%; }
+
+/*--------- checkout --------------------*/
+/* line 1098, airtel/assets/scss/buy.scss */
+#checkoutright input[type="tel"]:not([ng-model="vm.enteredAadharNumberOther"]),
+#checkoutright input[type="number"] {
+  max-width: 130px;
+  font-size: 20px; }
+  /* line 1102, airtel/assets/scss/buy.scss */
+  #checkoutright input[type="tel"]:not([ng-model="vm.enteredAadharNumberOther"])::placeholder,
+  #checkoutright input[type="number"]::placeholder {
+    font-size: 16px; }
+/* line 1106, airtel/assets/scss/buy.scss */
+#checkoutright .otpfeild {
+  max-width: 84px !important; }
+  /* line 1108, airtel/assets/scss/buy.scss */
+  #checkoutright .otpfeild::placeholder {
+    font-size: 12px !important; }
+/* line 1112, airtel/assets/scss/buy.scss */
+#checkoutright .opcity-0 {
+  opacity: 0; }
+
+/* line 1117, airtel/assets/scss/buy.scss */
+.loan-approvel-circle li.active .circle {
+  background: #E40000;
+  box-shadow: none;
+  color: #fff; }
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 1115, airtel/assets/scss/buy.scss */
+  .loan-approvel-circle li {
+    width: 100px;
+    margin-right: 15px; }
+    /* line 1126, airtel/assets/scss/buy.scss */
+    .loan-approvel-circle li .circle {
+      width: 100px;
+      height: 100px; }
+      /* line 1129, airtel/assets/scss/buy.scss */
+      .loan-approvel-circle li .circle h5 {
+        font-size: 18px; } }
+@media screen and (max-width: 767px) {
+  /* line 1136, airtel/assets/scss/buy.scss */
+  .loan-approvel-circle li {
+    margin-bottom: 20px; } }
+
+@media screen and (min-width: 768px) {
+  /* line 1142, airtel/assets/scss/buy.scss */
+  .bottom-fixed {
+    position: absolute;
+    bottom: 0;
+    left: 15px; } }
+/* line 1150, airtel/assets/scss/buy.scss */
+.custom_select .custom_input {
+  height: 45px;
+  border-bottom: solid 1px #000;
+  width: 100%;
+  display: block;
+  position: relative;
+  line-height: 2.5; }
+  /* line 1157, airtel/assets/scss/buy.scss */
+  .custom_select .custom_input:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 33px;
+    margin-top: -25px;
+    width: 0;
+    height: 0;
+    content: '\f120';
+    font-family: airtel-icons;
+    font-size: 20px; }
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
+      /* line 1157, airtel/assets/scss/buy.scss */
+      .custom_select .custom_input:after {
+        right: 15px; } }
+  /* line 1173, airtel/assets/scss/buy.scss */
+  .custom_select .custom_input.active:after {
+    transform: rotate(180deg);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: 21px;
+    width: 0;
+    height: 0;
+    content: '\f120';
+    font-family: airtel-icons;
+    font-size: 20px; }
+    @media screen and (max-width: 1199px) and (min-width: 767px) {
+      /* line 1173, airtel/assets/scss/buy.scss */
+      .custom_select .custom_input.active:after {
+        right: 0px; } }
+/* line 1191, airtel/assets/scss/buy.scss */
+.custom_select .dropdown-menu {
+  min-width: 100%;
+  padding: 0;
+  margin-top: -2px; }
+  /* line 1195, airtel/assets/scss/buy.scss */
+  .custom_select .dropdown-menu li {
+    cursor: pointer; }
+    /* line 1197, airtel/assets/scss/buy.scss */
+    .custom_select .dropdown-menu li a {
+      padding: 9px 8px;
+      line-height: 18px; }
+    /* line 1201, airtel/assets/scss/buy.scss */
+    .custom_select .dropdown-menu li.active {
+      background: #e40000;
+      color: #fff; }
+    /* line 1205, airtel/assets/scss/buy.scss */
+    .custom_select .dropdown-menu li.disabled {
+      pointer-events: none; }
+
+@media screen and (max-width: 767px) {
+  /* line 1212, airtel/assets/scss/buy.scss */
+  .payment-Wallet.loan-approvel-circle {
+    margin: 0; }
+    /* line 1214, airtel/assets/scss/buy.scss */
+    .payment-Wallet.loan-approvel-circle ul {
+      padding-left: 0; } }
+/* line 1219, airtel/assets/scss/buy.scss */
+ul.slide-controller {
+  padding-left: 0;
+  margin-top: 20px;
+  bottom: 0;
+  position: absolute; }
+
+/* line 1221, airtel/assets/scss/buy.scss */
+ul.slide-controller li {
+  float: left;
+  margin-right: 10px;
+  padding: 3px;
+  background: none;
+  list-style: none;
+  border: solid 1px #000;
+  border-radius: 50%; }
+
+/* line 1230, airtel/assets/scss/buy.scss */
+ul.slide-controller li.active {
+  padding: 4px;
+  background: #000; }
+
+/* line 1234, airtel/assets/scss/buy.scss */
+.slider img {
+  margin: auto; }
+  @media screen and (max-width: 767px) {
+    /* line 1234, airtel/assets/scss/buy.scss */
+    .slider img {
+      width: auto;
+      max-height: 280px; } }
+
+/* line 1245, airtel/assets/scss/buy.scss */
+.page-main-app-devices-checkout-hdfcloanapproval .modal-lg,
+.page-main-app-devices-checkout-hdfcloanapproval .modal-lg .modal-content,
+.page-main-app-devices-checkout-choosenumber .modal-lg,
+.page-main-app-devices-checkout-choosenumber .modal-lg .modal-content,
+.page-main-app-devices-checkout-loanapproval .modal-lg,
+.page-main-app-devices-checkout-loanapproval .modal-lg .modal-content,
+.page-main-app-devices-checkout-customerinfo .modal-lg,
+.page-main-app-devices-checkout-customerinfo .modal-lg .modal-content,
+.page-main-app-devices-pdp .modal-lg,
+.page-main-app-devices-pdp .modal-lg .modal-content {
+  height: 100%;
+  margin-top: 0; }
+
+/* line 1248, airtel/assets/scss/buy.scss */
+.modal-header-footer-fixed {
+  height: 100%;
+  overflow: hidden; }
+
+/* line 1249, airtel/assets/scss/buy.scss */
+.modal-header-footer-fixed .modal-header {
+  padding-top: 15px;
+  box-shadow: 0 1px 1px #eee; }
+
+/* line 1250, airtel/assets/scss/buy.scss */
+.modal-header-footer-fixed .modal-body {
+  overflow: auto;
+  height: calc(100% - 155px); }
+
+/* line 1254, airtel/assets/scss/buy.scss */
+.modal-header-footer-fixed .modal-footer {
+  box-shadow: 0 -1px 1px #eee;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/* line 1256, airtel/assets/scss/buy.scss */
+#loanTerms_section p {
+  margin-bottom: 15px;
+  font-size: 14px; }
+
+/* line 1257, airtel/assets/scss/buy.scss */
+#loanTerms_section .row {
+  height: auto !important; }
+
+/* line 1258, airtel/assets/scss/buy.scss */
+#loanTerms_section h1 {
+  color: #000 !important;
+  font-size: 36px  !important;
+  line-height: 1;
+  margin-bottom: 20px !important; }
+
+/* line 1259, airtel/assets/scss/buy.scss */
+#loanTerms_section h1 br {
+  display: none; }
+
+/* line 1260, airtel/assets/scss/buy.scss */
+#loanTerms_section h2 {
+  font-size: 28px !important; }
+
+/* line 1261, airtel/assets/scss/buy.scss */
+#loanTerms_section h3 {
+  font-size: 24px  !important;
+  line-height: 1.3; }
+
+/* line 1262, airtel/assets/scss/buy.scss */
+#loanTerms_section h4 {
+  font-size: 20px  !important; }
+
+/* line 1263, airtel/assets/scss/buy.scss */
+#loanTerms_section .container {
+  width: 100%;
+  padding: 0; }
+
+/* line 1264, airtel/assets/scss/buy.scss */
+.modal-body #loanTerms_section [class^="col-"] {
+  margin: 0; }
+
+/* line 1265, airtel/assets/scss/buy.scss */
+#loanTerms_section .bordertable {
+  width: 100% !important; }
+
+/* line 1266, airtel/assets/scss/buy.scss */
+#loanTerms_section p[style="font-size:65px;"] {
+  font-size: 36px !important; }
+
+/* line 1267, airtel/assets/scss/buy.scss */
+#loanTerms_section input:focus {
+  border-color: #666; }
+
+/* line 1271, airtel/assets/scss/buy.scss */
+.page-main-app-devices-pdp .modal {
+  z-index: 99992 !important; }
+/* line 1274, airtel/assets/scss/buy.scss */
+.page-main-app-devices-pdp .modal-backdrop.in {
+  z-index: 99991 !important; }
+
+/* line 1281, airtel/assets/scss/buy.scss */
+.page-main-app-devices-checkout-loanapproval,
+.page-main-app-devices-checkout-customerinfo,
+.page-main-app-devices-checkout-choosenumber,
+.page-main-app-devices-checkout-authenticate,
+.page-main-app-devices-paymentSuccess,
+.page-paymentSuccess,
+.page-main-app-devices-paymentsuccess,
+.page-main-app-devices-checkout-hdfcloanapproval {
+  background: #fff; }
+  /* line 1290, airtel/assets/scss/buy.scss */
+  .page-main-app-devices-checkout-loanapproval main#topElement,
+  .page-main-app-devices-checkout-customerinfo main#topElement,
+  .page-main-app-devices-checkout-choosenumber main#topElement,
+  .page-main-app-devices-checkout-authenticate main#topElement,
+  .page-main-app-devices-paymentSuccess main#topElement,
+  .page-paymentSuccess main#topElement,
+  .page-main-app-devices-paymentsuccess main#topElement,
+  .page-main-app-devices-checkout-hdfcloanapproval main#topElement {
+    height: 100%; }
+  /* line 1293, airtel/assets/scss/buy.scss */
+  .page-main-app-devices-checkout-loanapproval .content-wrap,
+  .page-main-app-devices-checkout-customerinfo .content-wrap,
+  .page-main-app-devices-checkout-choosenumber .content-wrap,
+  .page-main-app-devices-checkout-authenticate .content-wrap,
+  .page-main-app-devices-paymentSuccess .content-wrap,
+  .page-paymentSuccess .content-wrap,
+  .page-main-app-devices-paymentsuccess .content-wrap,
+  .page-main-app-devices-checkout-hdfcloanapproval .content-wrap {
+    height: 100%; }
+    /* line 1295, airtel/assets/scss/buy.scss */
+    .page-main-app-devices-checkout-loanapproval .content-wrap > [ui-view="content"],
+    .page-main-app-devices-checkout-customerinfo .content-wrap > [ui-view="content"],
+    .page-main-app-devices-checkout-choosenumber .content-wrap > [ui-view="content"],
+    .page-main-app-devices-checkout-authenticate .content-wrap > [ui-view="content"],
+    .page-main-app-devices-paymentSuccess .content-wrap > [ui-view="content"],
+    .page-paymentSuccess .content-wrap > [ui-view="content"],
+    .page-main-app-devices-paymentsuccess .content-wrap > [ui-view="content"],
+    .page-main-app-devices-checkout-hdfcloanapproval .content-wrap > [ui-view="content"] {
+      min-height: calc(100% - 60px);
+      margin-bottom: -100px;
+      padding-bottom: 100px; }
+    /* line 1301, airtel/assets/scss/buy.scss */
+    .page-main-app-devices-checkout-loanapproval .content-wrap > [ui-view="footer"],
+    .page-main-app-devices-checkout-customerinfo .content-wrap > [ui-view="footer"],
+    .page-main-app-devices-checkout-choosenumber .content-wrap > [ui-view="footer"],
+    .page-main-app-devices-checkout-authenticate .content-wrap > [ui-view="footer"],
+    .page-main-app-devices-paymentSuccess .content-wrap > [ui-view="footer"],
+    .page-paymentSuccess .content-wrap > [ui-view="footer"],
+    .page-main-app-devices-paymentsuccess .content-wrap > [ui-view="footer"],
+    .page-main-app-devices-checkout-hdfcloanapproval .content-wrap > [ui-view="footer"] {
+      height: 100px;
+      position: relative; }
+    /* line 1305, airtel/assets/scss/buy.scss */
+    .page-main-app-devices-checkout-loanapproval .content-wrap:after,
+    .page-main-app-devices-checkout-customerinfo .content-wrap:after,
+    .page-main-app-devices-checkout-choosenumber .content-wrap:after,
+    .page-main-app-devices-checkout-authenticate .content-wrap:after,
+    .page-main-app-devices-paymentSuccess .content-wrap:after,
+    .page-paymentSuccess .content-wrap:after,
+    .page-main-app-devices-paymentsuccess .content-wrap:after,
+    .page-main-app-devices-checkout-hdfcloanapproval .content-wrap:after {
+      height: 100px;
+      content: ''; }
+
+/* line 1312, airtel/assets/scss/buy.scss */
+section.banner article {
+  min-height: 480px; }
+
+/* line 1316, airtel/assets/scss/buy.scss */
+input[type="email"] {
+  font-size: 16px;
+  color: #000;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D4D4D4;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+  height: 36px;
+  outline: none;
+  box-shadow: none; }
+
+/* line 1335, airtel/assets/scss/buy.scss */
+.appointmentcalender .dropdown-menu {
+  min-width: 300px !important; }
+  @media screen and (min-width: 767px) {
+    /* line 1335, airtel/assets/scss/buy.scss */
+    .appointmentcalender .dropdown-menu {
+      min-width: 300px; } }
+/* line 1342, airtel/assets/scss/buy.scss */
+.appointmentcalender .uib-month .btn, .appointmentcalender .uib-year .btn {
+  font-size: 12px !important;
+  width: auto !important; }
+  /* line 1345, airtel/assets/scss/buy.scss */
+  .appointmentcalender .uib-month .btn:hover span, .appointmentcalender .uib-year .btn:hover span {
+    border-bottom: 1px #e40000 solid !important; }
+/* line 1349, airtel/assets/scss/buy.scss */
+.appointmentcalender .uib-month .btn.active, .appointmentcalender .uib-year .btn.active {
+  background: none !important;
+  color: #e40000 !important;
+  font-weight: 400; }
+/* line 1354, airtel/assets/scss/buy.scss */
+.appointmentcalender .uib-month:hover .btn, .appointmentcalender .uib-year:hover .btn {
+  color: #e40000; }
+/* line 1357, airtel/assets/scss/buy.scss */
+.appointmentcalender .uib-month:hover .btn.active, .appointmentcalender .uib-year:hover .btn.active {
+  color: #fff; }
+/* line 1361, airtel/assets/scss/buy.scss */
+.appointmentcalender table {
+  width: 100%; }
+
+/* line 1366, airtel/assets/scss/buy.scss */
+.ellipsis {
+  background-color: #fff !important; }
+
+/* line 1370, airtel/assets/scss/buy.scss */
+.ellipsis + .tooltip > .tooltip-inner {
+  background-color: #f6f6f6 !important;
+  color: #000 !important;
+  padding: 10px 20px; }
+
+/* line 1371, airtel/assets/scss/buy.scss */
+.ellipsis + .tooltip > .tooltip-arrow {
+  border-top-color: #f6f6f6 !important;
+  color: #000 !important; }
+
+@media screen and (min-width: 767px) {
+  /* line 1374, airtel/assets/scss/buy.scss */
+  .specialOffers_box h6.text-strong-orange {
+    min-height: 50px; } }
+/* line 1378, airtel/assets/scss/buy.scss */
+.specialOffers_box .specialOffers_box_col {
+  display: inline-block;
+  float: none !important;
+  vertical-align: top; }
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 1384, airtel/assets/scss/buy.scss */
+  .specialOffers_box i.fs-50 {
+    font-size: 40px !important; } }
+
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 1389, airtel/assets/scss/buy.scss */
+  .sm-text-left {
+    text-align: left; } }
+
+/* line 1394, airtel/assets/scss/buy.scss */
+input[type=text]::-ms-clear, input[type=email]::-ms-clear {
+  display: none; }
+
+@media screen and (min-width: 767px) {
+  /* line 1399, airtel/assets/scss/buy.scss */
+  .leftsidebar {
+    margin-bottom: 3px;
+    position: absolute;
+    top: 0;
+    width: 24%; }
+
+  /* line 1406, airtel/assets/scss/buy.scss */
+  .leftsidebarfixed {
+    position: fixed;
+    top: 0; }
+
+  /* line 1411, airtel/assets/scss/buy.scss */
+  .left_section .leftsidebarfixed {
+    width: 23%;
+    max-width: 300px;
+    min-width: 300px;
+    padding-right: 15px; } }
+@media screen and (min-width: 767px) {
+  /* line 1421, airtel/assets/scss/buy.scss */
+  .scrollbox {
+    overflow: auto;
+    height: 100%;
+    padding-right: 15px !important;
+    width: 100% !important; }
+
+  /* line 1427, airtel/assets/scss/buy.scss */
+  .track3 {
+    width: 10px;
+    background: transparent;
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear; }
+
+  /* line 1435, airtel/assets/scss/buy.scss */
+  .track3:hover,
+  .track3.dragging {
+    background: #d9d9d9;
+    /* Browsers without rgba support */
+    background: rgba(0, 0, 0, 0.15); }
+
+  /* line 1440, airtel/assets/scss/buy.scss */
+  .handle3 {
+    width: 7px;
+    right: 0;
+    background: #999;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms; }
+
+  /* line 1449, airtel/assets/scss/buy.scss */
+  .track3:hover .handle3,
+  .track3.dragging .handle3 {
+    width: 10px; } }
+/* line 1454, airtel/assets/scss/buy.scss */
+.removestickysidebar {
+  position: relative !important;
+  top: 0px !important;
+  width: 100% !important;
+  min-width: 300px; }
+
+/* line 1462, airtel/assets/scss/buy.scss */
+.page-main-app-devices-checkout-loanapproval table,
+.page-main-app-devices-checkout-choosenumber table {
+  width: 100% !important; }
+  /* line 1464, airtel/assets/scss/buy.scss */
+  .page-main-app-devices-checkout-loanapproval table td,
+  .page-main-app-devices-checkout-choosenumber table td {
+    padding: 5px; }
+
+/* line 1471, airtel/assets/scss/buy.scss */
+.select-dob .selectize-control {
+  width: 100%; }
+/* line 1475, airtel/assets/scss/buy.scss */
+.select-dob .selectize-input input {
+  margin-top: -5px !important; }
+  @media screen and (max-width: 1199px) and (min-width: 767px) {
+    /* line 1475, airtel/assets/scss/buy.scss */
+    .select-dob .selectize-input input {
+      font-size: 12px; } }
+
+/* line 1484, airtel/assets/scss/buy.scss */
+.page-main-app-devices-checkout-authenticate .input-group-addon {
+  padding: 8px 0px; }
+
+/* line 1488, airtel/assets/scss/buy.scss */
+.modal-header h3 {
+  line-height: 36px; }
+  @media screen and (max-width: 767px) {
+    /* line 1488, airtel/assets/scss/buy.scss */
+    .modal-header h3 {
+      font-size: 24px;
+      line-height: 26px; } }
+
+/* line 1495, airtel/assets/scss/buy.scss */
+.model-footer-fixed-bottom {
+  position: fixed;
+  bottom: 0px;
+  background: #f6f6f6;
+  width: 100%; }
+
+@media screen and (max-width: 1199px) and (min-width: 767px) {
+  /* line 1501, airtel/assets/scss/buy.scss */
+  .pr-sm-0 {
+    padding-right: 0px !important; } }
+
+/* line 1506, airtel/assets/scss/buy.scss */
+.page-main-app-devices-pdp .table .border-bottom {
+  border-color: #eee !important; }
+
+@media screen and (max-width: 767px) {
+  /* line 1508, airtel/assets/scss/buy.scss */
+  .page-main-app-devices-checkout-customerinfo .form-group.large input {
+    max-width: 100%; } }
