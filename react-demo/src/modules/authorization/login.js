@@ -44,7 +44,7 @@ class LoginComponent extends React.Component {
                 <div className='form__submit-btn-wrapper'>
                     <button className='form__submit-btn' type='submit'>sign in</button>
                 </div>
-                <AuthUserDetails></AuthUserDetails>
+                {/* <AuthUserDetails></AuthUserDetails> */}
         </form>
         )
     }
@@ -59,6 +59,9 @@ class LoginComponent extends React.Component {
     _onSubmit (event) {
         event.preventDefault();
         this.props.actions.authorizeUser(this.state.username, this.state.password);
+        if (localStorage.appAccessToken) {
+            this.context.router.push('/usersDetail');
+        }
     }
 }
 
@@ -67,16 +70,17 @@ LoginComponent.propTypes = {
     dispatch: React.PropTypes.func
 }
 
+LoginComponent.contextTypes = {
+  router: React.PropTypes.object
+};
+
 function mapStateToProps(state, ownProps) {
     if (state.authData.token) {
         localStorage.setItem('appAccessToken', state.authData.token);
-        return {
-            authData : state.authData
-        }
     } 
-    return {
+    return Object.assign({}, state, {
         authData : state.authData
-    }
+    });
 }
 
 function mapDispatchToProps(dispatch) {

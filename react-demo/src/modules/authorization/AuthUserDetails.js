@@ -6,21 +6,32 @@ import * as authorizeUserAction from '../../common/actions/userActions';
 class AuthUserDetailComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this._logout =  this._logout.bind(this);
     }
+
     componentWillMount() {
         this.props.actions.fetchUserDetails();
     }
     render() {
         return (
             <div>
-                {this.props.users ? this.props.users.map(function(item, index) {
+                {this.props.users.length ? this.props.users.map(function(item, index) {
                     return <div key={index}>{item.name}</div>;
                 }) : null}
+                <button onClick= {this._logout} className='form__submit-btn' type='submit'>logout</button>
             </div>
         )
     }
+
+    _logout(event) {
+        localStorage.removeItem("appAccessToken");
+        this.context.router.push('/login');
+    }
 }
+
+AuthUserDetailComponent.contextTypes = {
+  router: React.PropTypes.object
+};
 
 AuthUserDetailComponent.propTypes = {
     actions : PropTypes.object.isRequired,

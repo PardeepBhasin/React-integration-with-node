@@ -29,6 +29,7 @@ export function authorizeUser(username, password) {
 
 export function fetchUserDetails() {
     var token = localStorage.getItem('appAccessToken');
+    console.log("shdhvshgdvs"+token);
     return function (dispatch) {
         fetch('http://localhost:8081/api/users', { 
             method: 'GET',
