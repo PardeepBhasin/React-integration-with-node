@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as authorizeUserAction from '../../common/actions/userActions';
 import MuiThemeProvider from '../../../node_modules/material-ui/styles/MuiThemeProvider';
+import RaisedButton from '../../../node_modules/material-ui/RaisedButton';
+import TextField from '../../../node_modules/material-ui/TextField';
 import {
   Table,
   TableBody,
@@ -10,6 +12,7 @@ import {
   TableHeaderColumn,
   TableRow,
   TableRowColumn,
+  TableFooter,
 } from '../../../node_modules/material-ui/Table';
 
 class AuthUserDetailComponent extends React.Component {
@@ -17,13 +20,21 @@ class AuthUserDetailComponent extends React.Component {
         super(props);
         this.state = {
             user : '',
-            selected: [1]
+            selected: [1],
+            fixedHeader: false,
+            fixedFooter: false,
+            stripedRows: false,
+            showRowHover: false,
+            selectable: true,
+            multiSelectable: false,
+            enableSelectAll: false,
+            deselectOnClickaway: true,
+            showCheckboxes: true,
+            height: '400px'
         }
         this._logout =  this._logout.bind(this);
         this._addUser = this._addUser.bind(this);
         this._changeUser = this._changeUser.bind(this);
-        this.handleRowSelection = this.handleRowSelection.bind(this);
-        this.isSelected = this.isSelected.bind(this);
     }
 
     componentWillMount() {
@@ -33,34 +44,57 @@ class AuthUserDetailComponent extends React.Component {
         return (
             <div>
                 <MuiThemeProvider>
-                    <Table onRowSelection={this.handleRowSelection}>
-                        <TableHeader>
-                        <TableRow>
-                            <TableHeaderColumn>ID</TableHeaderColumn>
-                            <TableHeaderColumn>Name</TableHeaderColumn>
-                            <TableHeaderColumn>Status</TableHeaderColumn>
-                        </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {this.props.users.length ? this.props.users.map(function(item, index) {
-                                return  <TableRow>
-                                            <TableRowColumn>{item._id}</TableRowColumn>
-                                            <TableRowColumn>{item.name}</TableRowColumn>
-                                            <TableRowColumn>{item.password}</TableRowColumn>
-                                        </TableRow>
-                            }) : null}
-                        </TableBody>
-                    </Table>
-                </MuiThemeProvider>
-                <input
-                        className='form__field-input'
-                        type='text'
-                        required="required" 
+                    <TextField
                         value={this.state.user}
                         onChange={this._changeUser}
-                        placeholder='Add User'/>
-                        <button onClick= {this._addUser} className='form__submit-btn' type='submit'>Add User</button>
-                <button onClick= {this._logout} className='form__submit-btn' type='submit'>logout</button>
+                        hintText="Add User"
+                        floatingLabelText="Add New User"
+                    />  
+                </MuiThemeProvider>&nbsp;&nbsp;&nbsp;
+                <MuiThemeProvider>
+                    <RaisedButton label="Add User" secondary={true} onClick= {this._addUser}/>
+                </MuiThemeProvider>
+                <MuiThemeProvider>
+                    <Table
+                        height={this.state.height}
+                        fixedHeader={this.state.fixedHeader}
+                        fixedFooter={this.state.fixedFooter}
+                        selectable={this.state.selectable}
+                        multiSelectable={this.state.multiSelectable}
+                        >
+                        <TableHeader
+                            displaySelectAll={this.state.showCheckboxes}
+                            adjustForCheckbox={this.state.showCheckboxes}
+                            enableSelectAll={this.state.enableSelectAll}
+                        >
+                        <TableRow>
+                            <TableHeaderColumn colSpan="4" tooltip="Super Header" style={{textAlign: 'center'}}>
+                                Super Header
+                            </TableHeaderColumn>
+                            </TableRow>
+                            <TableRow>
+                            <TableHeaderColumn tooltip="The ID">ID</TableHeaderColumn>
+                            <TableHeaderColumn tooltip="The Name">Name</TableHeaderColumn>
+                            <TableHeaderColumn tooltip="The Status">Status</TableHeaderColumn>
+                            <TableHeaderColumn tooltip="The Status">Edit</TableHeaderColumn>
+                        </TableRow>
+                        </TableHeader>
+                        <TableBody
+                            displayRowCheckbox={this.state.showCheckboxes}
+                            deselectOnClickaway={this.state.deselectOnClickaway}
+                            showRowHover={this.state.showRowHover}
+                            stripedRows={this.state.stripedRows}>
+                            {this.props.users.length ? this.props.users.map( function(row, index) {
+                                return <TableRow key={index}>
+                                    <TableRowColumn>{index}</TableRowColumn>
+                                    <TableRowColumn>{row.name}</TableRowColumn>
+                                    <TableRowColumn>{row.password}</TableRowColumn>
+                                    <RaisedButton label="Add User" secondary={true}/>
+                                </TableRow>
+                            }) : null}
+                        </TableBody>
+                </Table>
+                </MuiThemeProvider>
             </div>
         )
     }
@@ -78,16 +112,6 @@ class AuthUserDetailComponent extends React.Component {
         event.preventDefault();
         this.props.actions.saveUser(this.state.user);
     }
-
-    handleRowSelection(selectedRows) {
-        this.setState({
-        selected: selectedRows,
-        });
-    };
-
-    isSelected(index) {
-        return this.state.selected.indexOf(index) !== -1;
-    };
 }
 
 AuthUserDetailComponent.contextTypes = {
