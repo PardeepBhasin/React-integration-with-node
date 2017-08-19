@@ -2,7 +2,10 @@ import React, {PropTypes} from 'react';
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as authorizeUserAction from '../../common/actions/userActions';
-import AuthUserDetails from './AuthUserDetails';
+import MuiThemeProvider from '../../../node_modules/material-ui/styles/MuiThemeProvider';
+import RaisedButton from '../../../node_modules/material-ui/RaisedButton';
+import TextField from '../../../node_modules/material-ui/TextField';
+
 class LoginComponent extends React.Component {
     constructor (props) {
         super(props);
@@ -16,36 +19,27 @@ class LoginComponent extends React.Component {
     }
     render() {
         return(
-            <form className='form' onSubmit={this._onSubmit}>
-                <div className='form__field-wrapper'>
-                    <input
-                        className='form__field-input'
-                        type='text'
-                        id='username'
-                        value={this.state.username}
-                        onChange={this._changeUsername}
-                        placeholder='username'/>
-                    <label className='form__field-label'>
-                        Username
-                    </label>
-                </div>
-                <div className='form__field-wrapper'>
-                    <input
-                        className='form__field-input'
-                        id='password'
-                        type='password'
-                        value={this.state.password}
-                        onChange={this._changePassword}
-                        placeholder='••••••••••'/>
-                    <label className='form__field-label'>
-                        Password
-                    </label>
-                </div>
-                <div className='form__submit-btn-wrapper'>
-                    <button className='form__submit-btn' type='submit'>sign in</button>
-                </div>
-                {/* <AuthUserDetails></AuthUserDetails> */}
-        </form>
+            <form className='form' onSubmit={this._onSubmit} style={{marginLeft: '50%'}}>
+                    <MuiThemeProvider>
+                        <TextField
+                            value={this.state.username}
+                            onChange={this._changeUsername}
+                            hintText="Enter Username"
+                            floatingLabelText="username"
+                        />
+                    </MuiThemeProvider><br></br>
+                    <MuiThemeProvider>
+                        <TextField
+                            value={this.state.password}
+                            onChange={this._changePassword}
+                            hintText="Enter Password"
+                            floatingLabelText="password"
+                        />
+                    </MuiThemeProvider><br></br>
+                    <MuiThemeProvider>
+                        <RaisedButton label="sign in" primary={true} onClick={this._onSubmit}/>
+                    </MuiThemeProvider>
+            </form>
         )
     }
 

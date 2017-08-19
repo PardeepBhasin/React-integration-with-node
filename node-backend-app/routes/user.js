@@ -5,6 +5,30 @@ var jwt = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var app = express();
 var config = require('../config');
 
+/* POST user. */
+router.post('/saveUser', function(req, res) {
+    // create a sample user
+  var nick = new user({ 
+    name: req.body.name, 
+    password: 'password',
+    admin: true 
+  });
+
+  // save the sample user
+  nick.save(function(err) {
+    if (err) throw err;
+
+    console.log('User saved successfully');
+    res.json({ success: true });
+  });
+});
+
+router.get('/users',function(req, res) {
+  user.find(function(err, users) {
+    res.json(users);
+  });
+});
+
 /* User Authenticated Route*/
 router.post('/authenticate', function(req, res) {
     user.findOne({
@@ -61,29 +85,6 @@ router.use(function(req, res, next) {
     });
 
   }
-});
-/* GET user listing. */
-router.get('/', function(req, res, next) {
-    // create a sample user
-  var nick = new user({ 
-    name: 'Nick Cerminara', 
-    password: 'password',
-    admin: true 
-  });
-
-  // save the sample user
-  nick.save(function(err) {
-    if (err) throw err;
-
-    console.log('User saved successfully');
-    res.json({ success: true });
-  });
-});
-
-router.get('/users',function(req, res) {
-  user.find(function(err, users) {
-    res.json(users);
-  });
 });
 
 module.exports = router;
