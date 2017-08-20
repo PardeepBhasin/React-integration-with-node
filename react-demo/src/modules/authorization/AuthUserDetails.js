@@ -89,9 +89,9 @@ class AuthUserDetailComponent extends React.Component {
                                     <TableRowColumn>{index}</TableRowColumn>
                                     <TableRowColumn>{row.name}</TableRowColumn>
                                     <TableRowColumn>{row.password}</TableRowColumn>
-                                    <RaisedButton label="Add User" secondary={true}/>
+                                    <RaisedButton label="Add User" secondary={true} onClick= {this._addUser}/>
                                 </TableRow>
-                            }) : null}
+                            }, this) : null}
                         </TableBody>
                 </Table>
                 </MuiThemeProvider>
@@ -109,6 +109,7 @@ class AuthUserDetailComponent extends React.Component {
     }
 
     _addUser(event) {
+        debugger;
         event.preventDefault();
         this.props.actions.saveUser(this.state.user);
     }
